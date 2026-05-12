@@ -29,7 +29,8 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const CONTRACT = "GOAT1111111111111111111111111111111111111111";
+const CONTRACT = "DSsHRuoBEYkbKHhMfG2Y8ZswEPjVQepHQWgGLTwJpump";
+const BUY_URL = `http://pump.fun/coin/${CONTRACT}`;
 
 /* --------------------------- Atmosphere --------------------------- */
 
@@ -444,9 +445,9 @@ function TokenSection() {
 
         <div className="mt-8 flex flex-wrap justify-center gap-3">
           {[
+            ["Pump.fun", BUY_URL],
             ["Solscan", `https://solscan.io/token/${CONTRACT}`],
             ["Jupiter", `https://jup.ag/swap/SOL-${CONTRACT}`],
-            ["Raydium", `https://raydium.io/swap/?outputMint=${CONTRACT}`],
           ].map(([n, h]) => (
             <a key={n} href={h} target="_blank" rel="noopener noreferrer"
               className="group rounded-full border border-gold/30 bg-background/50 px-6 py-3 font-display text-sm tracking-widest text-gold backdrop-blur-md transition-all hover:border-gold hover:bg-gold/10 hover:shadow-gold">
@@ -583,7 +584,7 @@ function Footer() {
 
 function FloatingBuy() {
   return (
-    <a href="#token" className="fixed bottom-6 right-6 z-40 group">
+    <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="fixed bottom-6 right-6 z-40 group">
       <span className="absolute -inset-2 rounded-full bg-gold/40 blur-xl animate-glow-pulse" />
       <span className="relative flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-4 font-display text-sm tracking-[0.2em] text-primary-foreground shadow-gold transition-transform group-hover:scale-110">
         BUY $GOAT
