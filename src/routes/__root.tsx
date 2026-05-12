@@ -78,12 +78,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "author", content: "THE LAST GOAT" },
       { name: "theme-color", content: "#0a0805" },
       { property: "og:title", content: "THE LAST GOAT | Final Football Legends on Solana" },
-      { property: "og:description", content: "The Final Era of Football Legends Lives Forever on Solana." },
+      { property: "og:description", content: "THE LAST GOAT is a football-inspired Solana meme project celebrating the legendary rivalry and final era of Cristiano Ronaldo and Lionel Messi." },
       { property: "og:image", content: "/goat-logo.png" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@TheLastGoatSol" },
       { name: "twitter:image", content: "/goat-logo.png" },
+      { name: "twitter:title", content: "THE LAST GOAT | Final Football Legends on Solana" },
+      { name: "twitter:description", content: "THE LAST GOAT is a football-inspired Solana meme project celebrating the legendary rivalry and final era of Cristiano Ronaldo and Lionel Messi." },
     ],
     links: [
       {
