@@ -209,7 +209,7 @@ function Hero() {
         </p>
 
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-rise" style={{ animationDelay: "0.35s" }}>
-          <a href="#token" className="group relative overflow-hidden rounded-full bg-gradient-gold px-8 py-4 font-display text-lg tracking-[0.2em] text-primary-foreground shadow-gold transition-transform hover:scale-[1.04]">
+          <a href={BUY_URL} target="_blank" rel="noopener noreferrer" className="group relative overflow-hidden rounded-full bg-gradient-gold px-8 py-4 font-display text-lg tracking-[0.2em] text-primary-foreground shadow-gold transition-transform hover:scale-[1.04]">
             <span className="relative z-10">BUY $GOAT</span>
             <span className="absolute inset-0 animate-scan-light bg-gradient-to-r from-transparent via-white/40 to-transparent" />
           </a>
